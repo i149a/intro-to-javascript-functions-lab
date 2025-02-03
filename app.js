@@ -100,3 +100,41 @@ function basicCalculator(num1, num2, operation) {
     }
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+
+//Exercise 10: calculateGrade()
+function calculateGrade(grade) {
+    if (grade >= 90 && grade <= 100) {
+        return 'A';
+    } else if (grade >= 80 && grade <= 89) {
+        return 'B';
+    } else if (grade >= 70 && grade <= 79) {
+        return 'C';
+    } else if (grade >= 60 && grade <= 69) {
+        return 'D';
+    } else if (grade < 60) {
+        return 'F';
+    } else {
+        return 'Out of range';
+    }
+}
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+
+//Exercise 11: createUsername()
+function createUsername(firstName, lastName) {
+    const firstSlice = firstName.slice(0,3);
+    const lastSlice = lastName.slice(0,3);
+    const firstlength = firstName.length;
+    const lastlength = lastName.length;
+    const length = firstlength + lastlength;
+    return firstSlice + lastSlice + length;
+}
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+//Exercise 12: numArgs()
+function numArgs(...args) {
+    return args.length;
+}
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
